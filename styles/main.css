@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.parent {
+  max-width: 1920px;
+  width: 100%;
+  height: 1080px;
+  display: grid;
+  grid-template-columns: 319px auto;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    " nav header"
+    " nav section"
+    " footer footer";
+}
+.navbar {
+  background-color: #222222;
+  grid-area: nav;
+}
+.footer {
+  grid-area: footer;
+  height: 500px;
+}
+
+.header {
+  background-color: white;
+  grid-area: header;
+}
+.mainsection {
+  background-color: white;
+  height: 1150px;
+  grid-area: section;
+}
+.burgerimage {
+  width: 26px;
+  height: 11px;
+}
+.logo {
+  font-size: 24px;
+  color: white;
+  font-family: "AvenirBlack";
+}
+.logo1 {
+  font-size: 24px;
+  color: white;
+  font-family: "AvenirBook";
+}
+.flex {
+  display: flex;
+}
+.logoline {
+  justify-content: space-between;
+  margin: 42px 30px;
+  align-items: center;
+}
+
+.navigation {
+  flex-direction: column;
+  margin: 25px;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.navpngs img {
+  width: 24px;
+  height: 24px;
+}
+.navpngs:hover {
+  width: 259px;
+  height: 50px;
+  background-color: #ff2288;
+  border-radius: 12px;
+}
+.navpngs a {
+  padding-left: 20px;
+}
+
+.navpngs {
+  align-items: center;
+  transition: 0.3s;
+}
+.navtext {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-family: "AvenirBook";
+}
+.follpngs img {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 20px;
+}
+.follpngs {
+  flex-direction: column;
+  margin: 42px 30px;
+}
+.followernames a {
+  color: white;
+  list-style-type: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+.followernames {
+  display: block;
+  margin-bottom: 45px;
+  font-size: 12px;
+  color: #fff;
+  font-family: "AvenirBook";
+}
+
+.folltext {
+  flex-direction: column;
+}
+.folltextparent {
+  margin-top: 55px;
+}
+.follstart {
+  color: white;
+  font-size: 12px;
+  margin-left: 30px;
+  font-family: "AvenirBlack";
+}
+.loadmore {
+  color: white;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: -35px;
+  font-family: "AvenirBlack";
+}
+.searchinput {
+  width: 446px;
+  height: 56px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  border: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+.gopro {
+  color: #ff2288;
+  font-size: 14px;
+}
+.leftside img {
+  width: 24px;
+  height: 24px;
+}
+.leftside {
+  align-items: center;
+  width: 300px;
+  justify-content: space-evenly;
+}
+.profile {
+  width: 56px;
+  height: 56px;
+}
+.upload {
+  color: #fff;
+  font-size: 14px;
+  font-family: "AvenirBlack";
+}
+.uploaddiv {
+  background-color: #ff2288;
+  border-radius: 12px;
+  width: 129px;
+  height: 56px;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.headeritem {
+  justify-content: space-between;
+  margin: 20px 30px;
+  border-bottom: 1px solid #f8f8f8;
+}
+.block {
+  display: block;
+}
+.searchpng {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 15px;
+}
+::placeholder {
+  padding-left: 15px;
+}
+.rightfiltertext {
+  color: #222222;
+  font-size: 16px;
+  font-family: "AvenirBook";
+}
+.rightfilter a {
+  text-decoration: none;
+  display: block;
+}
+.rightfilter h3 {
+  display: block;
+  padding-top: 15px;
+}
+.rightfilter {
+  justify-content: space-between;
+  width: 550px;
+  margin: 50px;
+}
+
+.all {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  height: 56px;
+  width: 56px;
+  text-align: center;
+}
+
+.filters {
+  font-size: 16px;
+  color: #222222;
+  font-family: "AvenirBook";
+}
+.leftfilter img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.leftfilter {
+  height: 56px;
+  width: 132px;
+  border-radius: 12px;
+  border: 1px solid #d8d8d8;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+.filterbox {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px;
+}
+.preview {
+  height: 200px;
+  width: 200px;
+  flex-direction: column;
+}
+.preview img {
+  height: 190px;
+  object-fit: cover;
+}
+.photobox {
+  margin: 0 110px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.previewtext {
+  font-size: 12px;
+  font-family: "AvenirBook";
+}
+.butload {
+  width: 200px;
+  height: 56px;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  margin: 70px auto;
+}
+.butload a {
+  font-size: 16px;
+  font-family: "AvenirBook";
+  color: #222222;
+}
+.topdesigners {
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 125px;
+}
+
+.followbar {
+  width: 90px;
+  height: 42px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  justify-content: center;
+  padding-top: 12px;
+}
+.followbar1 {
+  width: 90px;
+  height: 42px;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  justify-content: center;
+  padding-top: 12px;
+}
+.followsign {
+  color: #222222;
+  font-size: 14px;
+  font-family: "AvenirBook";
+}
+.designer img {
+  width: 80px;
+  height: 80px;
+}
+.designername {
+  font-size: 16px;
+  color: #222222;
+  font-family: "AvenirBook";
+}
+.designer {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+.location {
+  font-size: 12px;
+  color: #222222;
+  opacity: 0.6;
+  font-family: "AvenirBook";
+}
+.topdesignershead h3 {
+  font-family: "AvenirRoman";
+  font-size: 30px;
+  color: #222222;
+}
+.topdesignershead a {
+  color: #222222;
+  opacity: 0.3;
+  font-size: 10px;
+  font-family: "AvenirRoman";
+}
+.topdesignershead {
+  justify-content: space-between;
+  padding: 50px 150px;
+  align-items: center;
+}
+.fordesigners {
+  flex-direction: column;
+  height: 300px;
+  background-color: #fafafa;
+}
+.designersfooter {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footeritems a {
+  color: #222222;
+  font-family: "AvenirBook";
+}
+.footeritems p {
+  color: #222222;
+  font-family: "AvenirBook";
+}
+.footeritems {
+  justify-content: space-evenly;
+  width: 800px;
+  margin: 0 100px;
+}
+.footerbelow {
+  width: 900px;
+  justify-content: space-between;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 15px;
+}
+.social {
+  justify-content: flex-start;
+}
+.social img {
+  width: 24px;
+  height: 24px;
+}
+.rightpart {
+  width: 130px;
+  justify-content: space-between;
+}
+.for {
+  font-family: "AvenirBook";
+  font-size: 14px;
+}
+.smartacademy {
+  font-family: "AvenirBlack";
+  font-size: 15px;
+}
