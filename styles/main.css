@@ -25,6 +25,7 @@ a {
 .footer {
   grid-area: footer;
   height: 500px;
+  margin-top: 50px;
 }
 
 .header {
@@ -33,7 +34,7 @@ a {
 }
 .mainsection {
   background-color: white;
-  height: 1150px;
+  height: 1500px;
   grid-area: section;
 }
 .burgerimage {
@@ -340,7 +341,7 @@ a {
 }
 .fordesigners {
   flex-direction: column;
-  height: 300px;
+  height: 400px;
   background-color: #fafafa;
 }
 .designersfooter {
@@ -384,4 +385,105 @@ a {
 .smartacademy {
   font-family: "AvenirBlack";
   font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .parent {
+    max-width: 1024px;
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      " nav header"
+      " nav section"
+      " footer footer";
+  }
+  .searchinput {
+    width: 200px;
+    height: 56px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .leftside {
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+  }
+  .notifs {
+    width: 16px;
+    height: 16px;
+  }
+  .profile {
+    width: 30px;
+    height: 30px;
+  }
+  .upload {
+    color: #fff;
+    font-size: 14px;
+    font-family: "AvenirBlack";
+  }
+  .uploaddiv {
+    background-color: #ff2288;
+    border-radius: 12px;
+    width: 70px;
+    height: 56px;
+    align-items: center;
+    padding-left: 35px;
+  }
+  .headeritem {
+    width: 650px;
+  }
+  .mainsection {
+    width: 650px;
+  }
+  .rightfilter {
+    justify-content: space-between;
+
+    margin: 20px;
+  }
+  .filterbox {
+    margin: 0 auto;
+  }
+  .rightfiltertext {
+    font-size: 12px;
+  }
+  .upload {
+    font-size: 12px;
+    margin-left: -30px;
+  }
+  .uploaddiv {
+    width: 70px;
+    height: 50px;
+  }
+  .gopro {
+    font-size: 10px;
+  }
+  .footeritems {
+    justify-content: space-evenly;
+    width: 650px;
+    margin: 0 50px;
+    margin-right: 100px;
+  }
+  .footerbelow {
+    width: 650px;
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 15px;
+  }
+  .fordesigners {
+    margin: auto auto;
+    width: 800px;
+    margin-left: -180px;
+  }
+  .footer {
+    margin-left: -180px;
+  }
+  .footerbelow {
+    margin-left: -180px;
+  }
 }
