@@ -145,14 +145,14 @@ a {
   color: #ff2288;
   font-size: 14px;
 }
-.leftside img {
+.notifs {
   width: 24px;
   height: 24px;
 }
 .leftside {
   align-items: center;
-  width: 300px;
-  justify-content: space-evenly;
+  width: 400px;
+  justify-content: space-around;
 }
 .profile {
   width: 56px;
@@ -250,6 +250,7 @@ a {
   height: 190px;
   object-fit: cover;
 }
+
 .photobox {
   margin: 0 110px;
   flex-wrap: wrap;
