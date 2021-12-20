@@ -15,8 +15,7 @@ a {
   grid-template-rows: 100px auto;
   grid-template-areas:
     " nav header"
-    " nav section"
-    " footer footer";
+    " nav section";
 }
 .navbar {
   background-color: #222222;
@@ -25,7 +24,6 @@ a {
 .footer {
   grid-area: footer;
   height: 500px;
-  margin-top: 50px;
 }
 
 .header {
@@ -34,7 +32,7 @@ a {
 }
 .mainsection {
   background-color: white;
-  height: 1500px;
+  height: 1400px;
   grid-area: section;
 }
 .burgerimage {
@@ -44,13 +42,13 @@ a {
 .logo {
   font-size: 24px;
   color: white;
-  font-family: "AvenirBlack";
+  font-family: "AvenirBook";
 }
-.logo1 {
+/* .logo1 {
   font-size: 24px;
   color: white;
   font-family: "AvenirBook";
-}
+} */
 .flex {
   display: flex;
 }
@@ -253,8 +251,8 @@ a {
 }
 
 .photobox {
-  margin: 0 110px;
   flex-wrap: wrap;
+  margin: 0 110px;
   column-gap: 20px;
   row-gap: 30px;
 }
@@ -387,6 +385,15 @@ a {
   font-size: 15px;
 }
 
+.logolinemob {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 414px;
+  background-color: #222222;
+}
+}
+
 @media (max-width: 1024px) {
   .parent {
     max-width: 1024px;
@@ -440,6 +447,7 @@ a {
   }
   .mainsection {
     width: 650px;
+    margin-bottom: 200px;
   }
   .rightfilter {
     justify-content: space-between;
@@ -485,5 +493,106 @@ a {
   }
   .footerbelow {
     margin-left: -180px;
+  }
+}
+@media (max-width: 414px) {
+  .parent {
+    max-width: 414px;
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "  header"
+      " section";
+  }
+  .navbar {
+    display: none;
+  }
+  .mainsection {
+    max-width: 414px;
+    width: 100%;
+  }
+  .headeritem {
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fordesigners {
+    display: none;
+  }
+  .footer {
+    justify-content: space-evenly;
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 150px;
+  }
+  .footer p {
+    font-size: 8px;
+  }
+  .designersfooter a {
+    font-size: 8px;
+  }
+
+  .designersfooter {
+    padding-left: 20px;
+  }
+
+  .footeritems {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filterbox {
+    flex-wrap: wrap;
+  }
+  .rightfilter {
+    flex-wrap: wrap;
+  }
+
+  .footerbelow {
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+
+  .leftfilter {
+    display: none;
+  }
+
+  .search {
+    max-width: 100px;
+    height: 50px;
+  }
+
+  .searchinput {
+    max-width: 100px;
+    height: 50px;
+    
+  }
+
+  .leftside {
+    width: 314px;
+  }
+
+  .uploaddiv {
+    max-width: 60px;
+    padding-left: 0;
+  }
+
+  .logolinemob {
+    display: block;
+    text-align: center;
+    
+  }
+  .searchpng {
+    display: none;
+  }
+  ::placeholder {
+    font-size: 10px;
   }
 }
