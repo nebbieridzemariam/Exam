@@ -246,6 +246,7 @@ a {
   justify-content: space-around;
   font-size: 14px;
   font-family: "AvenirRoman";
+  color: #afafaf;
 }
 .parent__child:hover {
   background: #e7e7e7;
@@ -294,6 +295,10 @@ a {
 .smartacademy {
   font-family: "AvenirBlack";
   font-size: 15px;
+}
+.logoline2 {
+  background-color: #ff2288;
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -366,5 +371,178 @@ a {
   }
   .uploaddiv {
     width: 100px;
+  }
+}
+@media (max-width: 414px) {
+  .logoline2 {
+    background-color: #222222;
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+  }
+  .parent {
+    max-width: 414px;
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 4fr;
+    grid-template-areas:
+      "  header"
+      "  section"
+      "  footer";
+  }
+  .parent1 {
+    max-width: 300px;
+    padding-left: 40px;
+  }
+  .data p {
+    font-size: 8px;
+  }
+  .data {
+    max-width: 300px;
+    justify-content: space-around;
+    margin-left: 60px;
+  }
+  .parent__child {
+    max-width: 350px;
+  }
+  .parent__three,
+  .parent__two,
+  .parent__one {
+    max-width: 100px;
+    font-size: 8px;
+  }
+  .logoline2 {
+    display: block;
+    max-width: 414px;
+    width: 100%;
+    text-align: center;
+  }
+  .footeritems {
+    justify-content: space-evenly;
+    width: 650px;
+    margin: 0 50px;
+    margin-right: 100px;
+  }
+  .footerbelow {
+    width: 650px;
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 15px;
+  }
+  .fordesigners {
+    margin: auto auto;
+    width: 800px;
+    margin-left: -180px;
+  }
+  .footer {
+    margin-left: -180px;
+  }
+  .footerbelow {
+    margin-left: -180px;
+  }
+}
+@media (max-width: 414px) {
+  .parent {
+    max-width: 414px;
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "  header"
+      " section";
+  }
+  .navbar {
+    display: none;
+  }
+  .mainsection {
+    max-width: 414px;
+    width: 100%;
+  }
+  .headeritem {
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fordesigners {
+    display: none;
+  }
+  .footer {
+    justify-content: space-evenly;
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 150px;
+  }
+  .footer p {
+    font-size: 8px;
+  }
+  .designersfooter a {
+    font-size: 8px;
+  }
+
+  .designersfooter {
+    padding-left: 20px;
+  }
+
+  .footeritems {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filterbox {
+    flex-wrap: wrap;
+  }
+  .rightfilter {
+    flex-wrap: wrap;
+  }
+
+  .footerbelow {
+    max-width: 414px;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+
+  .leftfilter {
+    display: none;
+  }
+
+  .search {
+    max-width: 100px;
+    height: 50px;
+  }
+
+  .searchinput {
+    max-width: 100px;
+    height: 50px;
+  }
+
+  .leftside {
+    width: 300px;
+  }
+
+  .uploaddiv {
+    max-width: 60px;
+    padding-left: 0;
+  }
+  .upload {
+    margin-left: 4px;
+  }
+
+  .logolinemob {
+    display: block;
+    text-align: center;
+  }
+  .searchpng {
+    display: none;
+  }
+  ::placeholder {
+    font-size: 10px;
   }
 }

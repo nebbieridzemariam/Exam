@@ -44,11 +44,6 @@ a {
   color: white;
   font-family: "AvenirBook";
 }
-/* .logo1 {
-  font-size: 24px;
-  color: white;
-  font-family: "AvenirBook";
-} */
 .flex {
   display: flex;
 }
@@ -143,6 +138,7 @@ a {
 .gopro {
   color: #ff2288;
   font-size: 14px;
+  font-family: "AvenirBlack";
 }
 .notifs {
   width: 24px;
