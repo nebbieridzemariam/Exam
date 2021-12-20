@@ -581,6 +581,9 @@ a {
     max-width: 60px;
     padding-left: 0;
   }
+  .upload {
+    margin-left: 4px;
+  }
 
   .logolinemob {
     display: block;
