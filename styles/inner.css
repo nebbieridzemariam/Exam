@@ -315,24 +315,56 @@ a {
     margin: 50px auto;
   }
   .data {
-    max-width: 700px;
-    width: 70%;
+    max-width: 600px;
+    margin-left: 50px;
+    justify-content: space-between;
   }
   .parent1 {
-    max-width: 700px;
+    max-width: 600px;
+    margin-left: 90px;
   }
-  .parent__one,
-  .parent__two,
+
   .parent__three {
-    max-width: 250px;
+    max-width: 100px;
     justify-content: space-between;
   }
   .parent__child {
     max-width: 700px;
-    margin-left: -45px;
+    margin-left: -90px;
   }
   .parent__one {
     max-width: 150px;
     justify-content: space-around;
+  }
+  .parent__two {
+    width: 180px;
+    justify-content: space-evenly;
+    margin-left: -10px;
+  }
+  .headeritem {
+    max-width: 700px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .footer {
+    max-width: 700px;
+    margin-left: -60px;
+  }
+  .footerbelow {
+    max-width: 700px;
+    margin-left: -60px;
+  }
+  .search {
+    width: 250px;
+  }
+  .searchinput {
+    width: 250px;
+  }
+  .leftside {
+    width: 300px;
+  }
+  .uploaddiv {
+    width: 100px;
   }
 }
