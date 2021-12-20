@@ -295,3 +295,44 @@ a {
   font-family: "AvenirBlack";
   font-size: 15px;
 }
+
+@media (max-width: 1024px) {
+  .parent {
+    max-width: 1024px;
+    width: 100%;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas:
+      " nav header"
+      " nav section"
+      " footer footer";
+  }
+  .orderdata {
+    width: 700px;
+    justify-content: space-evenly;
+    margin: 50px auto;
+  }
+  .data {
+    max-width: 700px;
+    width: 70%;
+  }
+  .parent1 {
+    max-width: 700px;
+  }
+  .parent__one,
+  .parent__two,
+  .parent__three {
+    max-width: 250px;
+    justify-content: space-between;
+  }
+  .parent__child {
+    max-width: 700px;
+    margin-left: -100px;
+  }
+  .parent__one {
+    max-width: 150x0px;
+    justify-content: space-between;
+  }
+}
